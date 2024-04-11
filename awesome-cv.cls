@@ -105,7 +105,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1cm, right=2.0cm, bottom=0.5cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
@@ -418,8 +418,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{2mm}
+\newcommand{\acvSectionContentTopSkip}{1.5mm}
 
 
 %-------------------------------------------------------------------------------
@@ -630,14 +630,14 @@
   \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
-  \color{sectiondivider}\vhrulefill{0.9pt}
+  \color{sectiondivider}\vhrulefill{0.5pt}
 }
 
 % Define a subsection for CV
 % Usage: \cvsubsection{<subsection-title>}
 \newcommand{\cvsubsection}[1]{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-3mm}
+  \vspace{-4mm}
   \subsectionstyle{#1}
   \phantomsection
 }
@@ -649,7 +649,7 @@
   \paragraphstyle
 }{%
   \par
-  \vspace{2mm}
+  \vspace{1mm}
 }
 
 % Define an environment for cventry
