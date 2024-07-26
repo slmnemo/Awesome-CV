@@ -22,7 +22,7 @@
 \documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.3cm, top=.8cm, right=1.3cm, bottom=1.5cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -66,14 +66,14 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {}
-  {}
-  {\thepage}
+% \makecvfooter
+%   {}
+%   {}
+%   {\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -82,10 +82,9 @@
 %-------------------------------------------------------------------------------
 % \input{resume/summary.tex}
 \input{resume/education.tex}
-\input{resume/experience-embedded-digitaldesign.tex}
-% \input{resume/skills.tex}
-\input{resume/skills-light.tex}
-\input{resume/projects.tex}
+\input{resume/Includes/experiences/experience-embedded-digitaldesign.tex}
+\input{resume/Skills/embedded.tex}
+\input{resume/Includes/projects/embedded.tex}
 % \input{resume/projects-and-coursework.tex}
 % \input{resume/certificates.tex}
 \input{resume/extracurricular.tex}
