@@ -6,13 +6,19 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {
-        Refactored existing RTL files using a YAML representation influenced by IP-XACT, enabling rapid reuse of IP across projects.
+        Refactored existing SystemVerilog files into an internal YAML format influenced by IP-XACT, enabling rapid reuse of IP across projects.
         }
         \item {
-        Added simulator-agnostic wave database creation and probing to internal tool used for design verification and debugging.
+        Developed generator to generate addressing logic in SystemVerilog from a file definition to route APB bus signals based on addresses.
         }
         \item {
-        Wrote Python to link codebases to generate addressing logic in SystemVerilog, ensuring rapid design and addressing of APB bus signals.
+        Added functionality that added internal signals and logic operations to a Python tool that generates SystemVerilog from a YAML file.
+        }
+        \item {
+        Increased productivity by adding simulation options for coverage, analog designs, and waveform viewing to existing automation tools.
+        }
+        \item {
+        Refactored Pytest-BDD testing directory to enhance readability, modularity, and flexibility when adding or debugging tests.
         }
       \end{cvitems}
     }
