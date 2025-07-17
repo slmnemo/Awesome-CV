@@ -1,21 +1,26 @@
   \begin{cventry}
-    {Qualcomm} % Organization
+    {Qualcomm Capstone} % Organization
     {Digital Design Clinic Team} % Job title
     {Claremont, CA} % Location
     {Aug. 2023 - May 2024} % Date(s)
     {
     \begin{cvitems}
       \item{
-      Worked with a team of four students to analyze RTL projects to determine when an RTL design caused extra processing effort in logic synthesis by synthesizing many open source designs.
+      Worked with a team of five students to analyze RTL projects to determine when a design would fail to close PPA constraints in logic synthesis.
       }
       \item{
-      Generated AND-Inverter graphs using the open source CAD tool Yosys/ABC to extract features which were correlated with poor synthesis performance.
+      Generated AND-Inverter graphs using the open source CAD tool Yosys/ABC to extract features correlated with
+      reactivity to synthesis constraints.
       }
       \item{
-      Analyzed graphs in Python using NetworkX to analyze AIGs for use in a Machine Learning pipeline to detect whether a design would cause extra processing effort.
+      Analyzed and extracted features from generated graphs in Python to predict when a design might react a lot to
+      different PPA constraints.
       }
       \item {
-      Developed a speed-optimized custom implementation of DAG topological sort in Python to determine top-level source node for any given node in the graph, speeding up analysis by a factor of 100x.
+      Developed an optimized custom implementation of DAG topological sort to determine top-level source nodes for any given node in the graph, speeding up analysis by a factor of 100x.
+      }
+      \item {
+      Predicted module reactivity to PPA constraints during synthesis of HDL modules with an accuracy of 89\%.
       }
     \end{cvitems}
     }
