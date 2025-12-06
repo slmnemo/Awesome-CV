@@ -2,11 +2,13 @@
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
-*.log
+**.log
 *.lot
 *.fls
 *.out
 *.toc
+**.pdf
+**.gz
 
 ## Intermediate documents:
 *.dvi
@@ -21,4 +23,3 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
-**.pdf
