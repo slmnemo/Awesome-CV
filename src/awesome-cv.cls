@@ -747,7 +747,7 @@
 }{%
   \end{itemize}%
   \end{justify}%
-  \vspace{-5mm}%
+  \vspace{-0mm}%
 }
 
 

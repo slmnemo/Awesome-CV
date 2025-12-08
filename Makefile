@@ -1,23 +1,16 @@
-.PHONY: examples
+.PHONY: embedded
 
 CC = xelatex
 # CC = pdftex
-RESUME_DIR = resume_src
-OUTPUT_DIR = resumes
-CV_DIR = examples/cv
-RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
-CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
+RESUME_DIR=src
+OUTPUT_DIR=resumes
+RESUME_SRCS=$(find ${RESUME_DIR} -name '*.tex')
 
-examples: $(foreach x, coverletter cv resume, $x.pdf)
+embedded: ${RESUME_DIR}/resume_embedded.tex ${RESUME_SRCS}
+	${CC} -output-directory=${OUTPUT_DIR} $<
 
-embedded: ${RESUME_DIR}/resume_embedded.tex $(RESUME_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
-cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+coverletter: ${RESUME_DIR}/coverletter.tex
+	${CC} -output-directory=${OUTPUT_DIR} $<
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	rm -rf ${OUTPUT_DIR}/*.pdf
