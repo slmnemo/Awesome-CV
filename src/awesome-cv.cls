@@ -745,9 +745,10 @@
     \setlength{\parskip}{0pt}%
     \renewcommand{\labelitemi}{\bullet}%
 }{%
+  \vspace{4mm}%
   \end{itemize}%
   \end{justify}%
-  \vspace{-0mm}%
+  \vspace{4mm}%
 }
 
 
