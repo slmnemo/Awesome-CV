@@ -721,15 +721,15 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-1mm}
+  \vspace{-2mm}
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{1cm}} l L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{0mm}} l L{\textwidth * \real{0.9}}}
 }{%
-    \end{tabular*}
+  \end{tabular*}
   \end{center}
-    \vspace{-1mm}
+  \vspace{-1.1mm}
 }
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
