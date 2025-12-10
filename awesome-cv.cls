@@ -77,6 +77,7 @@
 % Needed to use icons from font-awesome
 \RequirePackage{fontawesome5}
 \RequirePackage{roboto}
+\RequirePackage{atkinson}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -165,8 +166,8 @@
 %-------------------------------------------------------------------------------
 \newcommand*{\headerfont}{\roboto}
 \newcommand*{\headerfontlight}{\robotolight}
-\newcommand*{\footerfont}{\roboto}
-\newcommand*{\bodyfont}{\roboto}
+\newcommand*{\footerfont}{\atkinson}
+\newcommand*{\bodyfont}{\sourcesanspro}
 \newcommand*{\bodyfontlight}{\robotolight}
 
 %-------------------------------------------------------------------------------
@@ -176,18 +177,18 @@
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\upshape\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfont\upshape\color{text}}
+\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfont\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{15pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\color{text} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\itshape\color{text} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\slshape\color{text} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\color{text} #1}}
