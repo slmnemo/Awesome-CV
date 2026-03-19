@@ -1,0 +1,79 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/src/resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+% \documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.3cm, top=.8cm, right=1.3cm, bottom=1.5cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-pink}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{000000}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Include resume header
+\input{resume_header.tex}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {}
+%   {}
+%   {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/src/resume CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{src/resume/Summaries/power-summary.tex}
+\input{src/resume/education.tex}
+\input{src/resume/Coursework/courses.tex}
+\input{src/resume/Skills/embedded.tex}
+\input{src/resume/Includes/experiences/experience-power.tex}
+% \input{src/resume/Includes/projects/embedded.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
