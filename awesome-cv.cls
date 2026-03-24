@@ -635,7 +635,7 @@
   \sectionstyle{#1}
   \phantomsection
   \color{sectiondivider}\vhrulefill{0.5pt}
-  \vspace{-1mm}
+  \vspace{-1.5mm}
 }
 
 % Define a subsection for CV
@@ -680,6 +680,7 @@
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}%
   \end{tabular*}%
 }
+  \vspace{-1.5mm}
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
