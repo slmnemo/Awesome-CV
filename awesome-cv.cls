@@ -655,7 +655,6 @@
   \paragraphstyle
 }{%
   \par
-  \vspace{1mm}
 }
 
 % Define an environment for cventry
@@ -664,6 +663,7 @@
   \begin{center}
 }{%
   \end{center}
+  \vspace{-0.2mm}
 }
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
@@ -736,7 +736,7 @@
   % \begin{left}
 }{%
   % \end{left}
-  \vspace{-6.5mm}
+  \vspace{-7.5mm}
 }
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
@@ -746,7 +746,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-3.2mm}%
+  \vspace{-3.8mm}%
   \begin{justify}%
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]%
     \setlength{\parskip}{0pt}%
