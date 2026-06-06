@@ -19,5 +19,8 @@ embedded:
 coverletter: 
 	${CC} -output-directory=${OUTPUT_DIR} ${RESUME_DIR}/coverletter.tex
 
+coverletter: 
+	${CC} -output-directory=${OUTPUT_DIR} ${RESUME_DIR}/coverletter-includedskills.tex
+
 clean:
 	rm -rf ${OUTPUT_DIR}/*.pdf
